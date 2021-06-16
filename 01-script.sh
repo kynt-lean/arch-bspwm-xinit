@@ -1,6 +1,6 @@
 # Install necessary packages = [graphic driver: xf86-video-intel (admgpu, nvidia, ...), display server: xorg, window manager: xorg-xinit (lightdm, lightdm-gtk-greeter, ...), monitor: bspwm, keyboard: sxhkd, menu: dmenu, background: nitrogen, compositor: picom, terminal: xfce4-terminal, browser: chromium, graphical tool: arandr, toolbar: polybar, sound: pulseaudio, utils: [ttf-font-awesome alsa-utils bash-completion]]
 sudo pacman -Sy
-sudo pacman -S --noconfirm xf86-video-intel xorg xorg-xinit bspwm sxhkd dmenu nitrogen picom xfce4-terminal chromium arandr ttf-font-awesome alsa-utils pulseaudio-alsa bash-completion
+sudo pacman -S --noconfirm xf86-video-intel xorg xorg-xinit bspwm sxhkd dmenu nitrogen picom xfce4-terminal chromium arandr ttf-font-awesome alsa-utils pulseaudio-alsa bash-completion thunar
 
 # Configuration packages = [keyboard hotkeys: $HOME/.config/sxhkd/sxhkdrc, monitor behaviors:$HOME/.config/bspwm/bspwmrc, grahpical display resolutions: $HOME/.screenlayout/display.sh, compositor: /etc/xdg/picom.conf (comment vsync = true;), backgrounds for nitrogen: /usr/share/backgrounds, xinit: $HOME/.xinitrc, terminal: $HOME/.bashrc]
 # sxhkd
