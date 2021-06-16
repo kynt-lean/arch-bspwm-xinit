@@ -121,8 +121,8 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # changing the brightness
-XF86MonBrightness{Up,Down}
-	xbackLight {-inc,-dec} 10
+#XF86MonBrightness{Up,Down}
+#	xbackLight {-inc,-dec} 10
 
 # changing the volume
 XF86Audio{Raise,Lower}Volume
@@ -131,3 +131,14 @@ XF86AudioMute
 	amixer set Master toggle
 
 # lockscreen
+# screen capture copy to clipboard
+shift + alt + c
+	xfce4-screenshooter -rc
+# screen capture upload to imgur
+shift + alt + i
+#	xfce4-screenshooter -ri
+	imgur-screenshot
+
+# browser
+shift + alt + b
+	google-chrome-stable

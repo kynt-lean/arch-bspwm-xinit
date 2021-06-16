@@ -59,7 +59,7 @@ font-3 = Font Awesome 5 Free:pixelsize=12;2
 font-4 = Font Awesome 5 Free Solid:pixelsize=12;2
 font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
-modules-left = bspwm i3
+modules-left = bspwm
 modules-center = xwindow
 modules-right = alsa memory cpu battery date powermenu
 
@@ -155,7 +155,12 @@ label-empty-padding = 2
 ; label-separator = |
 ws-icon-0 = I;
 ws-icon-1 = II;
-# ws-icon-2 = III;
+ws-icon-2 = III;
+ws-icon-3 = IV;
+ws-icon-4 = V;
+ws-icon-5 = VI;
+ws-icon-6 = VII;
+ws-icon-7 = VIII;
 
 [module/i3]
 type = internal/i3
@@ -340,7 +345,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 [module/alsa]
 type = internal/alsa
 
-format-volume = <label-volume> <bar-volume>
+format-volume = <label-volume>
 label-volume =  %percentage%%
 label-volume-foreground = ${root.foreground}
 
